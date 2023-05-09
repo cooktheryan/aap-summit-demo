@@ -1,0 +1,11 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleInventory
+metadata:
+  name: openshift
+spec:
+  connection_secret: aap-access
+  description: OpenShift Inventory
+  name: openshift
+  organization: Default
+  state: present
+  instance_groups: default
