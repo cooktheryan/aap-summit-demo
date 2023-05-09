@@ -1,0 +1,12 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleProject
+metadata:
+  name: summit-project
+spec:
+  repo: https://github.com/cooktheryan/ansible-tower-samples
+  branch: master
+  name: summit-project
+  scm_type: git
+  organization: Default
+  description: Summit demo of AAP GitOps
+  connection_secret: aap-access
