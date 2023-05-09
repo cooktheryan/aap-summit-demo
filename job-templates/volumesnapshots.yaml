@@ -3,7 +3,7 @@ kind: JobTemplate
 metadata:
   name: snapshot-ns-template
 spec:
-  connection_secret: aap-access
+  tower_auth_secret: aap-access
   job_template_name: Volume Snapshots
   job_template_project: summit-project
   job_template_playbook: volumesnapshots.yaml
