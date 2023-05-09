@@ -1,0 +1,14 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: JobTemplate
+metadata:
+  name: snapshot-ns-template
+spec:
+  connection_secret: aap-access
+  job_template_name: Volume Snapshots
+  job_template_project: summit-project
+  job_template_playbook: volumesnapshots.yaml
+  job_template_inventory: openshift
+  job_template_credentials: storage-automation
+  job_template_extra_vars:
+    namespace: summit-aap
+  
