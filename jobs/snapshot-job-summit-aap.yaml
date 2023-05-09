@@ -1,0 +1,7 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: snapshot-job
+spec:
+  connection_secret: aap-access 
+  job_template_name: Volume Snapshots
