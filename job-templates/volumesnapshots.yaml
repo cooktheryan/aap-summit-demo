@@ -7,6 +7,7 @@ spec:
   job_template_name: Volume Snapshots
   job_template_project: summit-project
   job_template_playbook: volumesnapshots.yaml
+  job_template_ask_vars: true
   job_template_inventory: openshift
   job_template_credentials: storage-automation
   job_template_extra_vars:
