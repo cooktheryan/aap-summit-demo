@@ -1,0 +1,9 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: snapshot-rekor
+spec:
+  connection_secret: aap-access
+  job_template_name: Volume Snapshots
+  extra_vars:
+    namespace: rekor-system
